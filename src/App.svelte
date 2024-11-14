@@ -1,6 +1,6 @@
 <script>
-  import "./app.css"
-  import Header from "./home/Header.svelte";
+  import Home from "./home/Home.svelte";
+  import "./app.css"  
 </script>
 
-<Header/>
+<Home/>

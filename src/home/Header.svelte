@@ -13,7 +13,7 @@
 </script>
 
 <header class="page-header bg-gray-700 text-white p-4 pb-8">
-    <div class="max-w-4xl">
+    <div class="max-w-4xl mx-auto">
         <section id="top" 
                  class="animete-up flex 
                         justify-between 
