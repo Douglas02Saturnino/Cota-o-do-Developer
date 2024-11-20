@@ -1,4 +1,6 @@
 <script>
+    import { app } from "../store.js";
+
     let freeHours = 1;
     let profile = {
         name: "Douglas Saturnino",
@@ -9,6 +11,10 @@
         total: 2,
         done: 1,
         progress: 1
+    }
+
+    function handlePage(){
+        $app.page = 'profile'
     }
 </script>
 
@@ -29,7 +35,7 @@
                     Você tem {freeHours} {freeHours ==1 ? 'hora livre' : 'horas livres'} horas livres no seu dia
                     {/if}
             </span>
-            <button id="avatar-profile" class='flex items-center gap-4 hover:text-orange-400 transition'>
+            <button on:click={handlePage} id="avatar-profile" class='flex items-center gap-4 hover:text-orange-400 transition'>
                 <div class="grid text-end">
                     <strong>{profile.name}</strong>
                     <span class="text-xs+">Ver perfil</span>
