@@ -13,10 +13,10 @@
     }
 </script>
 
-<div class="container animete-up delay-2 flex justify-between bg-gray-100 w-full">
-    <aside class="card max-w-48 bg-white border border-gray-200">
-        <img src={ profile.avatar } alt={ profile.name }>
-        <h2>{ profile.name }</h2>
+<div class="container animete-up delay-2 flex justify-between p-12 min-w-full">
+    <aside class="card max-w-80 bg-white border border-gray-200 p-16 rounded">
+        <img class="border-orange-400 rounded-full border-4" src={ profile.avatar } alt={ profile.name }>
+        <h2 class="text-2xl font-medium text-gray-600 text-center mt-4">{ profile.name }</h2>
         <p>
             O valor da sua hora é <br/>
             <strong>{profile.valueHour}</strong>
