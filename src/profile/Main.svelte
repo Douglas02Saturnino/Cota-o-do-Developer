@@ -13,36 +13,34 @@
     }
 </script>
 
-<div class="container animete-up delay-2 flex justify-between bg-gray-100 w-full">
-    <aside class="card max-w-48 bg-white border border-gray-200">
-        <img src={ profile.avatar } alt={ profile.name }>
-        <h2>{ profile.name }</h2>
-        <p>
+<div class="container animate-up delay-2 flex justify-between p-12 min-w-full">
+    <aside class="card max-w-80 bg-white border border-gray-200 p-16 rounded">
+        <img class="border-orange-400 rounded-full border-4" 
+        src={ profile.avatar } alt={ profile.name }>
+        <h2 class="text-2xl font-medium text-gray-600 text-center mt-4">{ profile.name }</h2>
+        <p class="text-center mt-4 text-gray-600">
             O valor da sua hora é <br/>
-            <strong>{profile.valueHour}</strong>
+            <strong class="text-xl">{profile.valueHour}</strong>
         </p>
     </aside>
 
 <main>
     <form>
-        <fieldset>
-            <legend> Dados do perfil</legend>
-            <div class="separator light"></div>
-            <div class="input-group">
-                <div class="input-wrapper">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" value={profile.name} />
+        
+            <h2 class="text-3xl font-medium text-gray-600 border-b pb-4 mb-4"> Dados do perfil</h2>
+            <div class="flex gap-4">
+                <div class="grid gap-2">
+                    <label for="name" class="text-gray-600 font-medium text-sm">Nome</label>
+                    <input class="px-4 py-2 border rounded-sm text-sm" type="text" id="name" value={profile.name} />
                 </div>
-                <div class="inputi-wrapper">
-                    <label for="avatar">Link da foto</label>
-                    <input placeholder="https://" type="url" id="avatar" name="avatar" 
+                <div class="grid gap-2">
+                    <label for="avatar" class="text-gray-600 font-medium text-sm">Link da foto</label>
+                    <input class="px-4 py-2 border rounded-sm text-sm" placeholder="https://" type="url" id="avatar" name="avatar" 
                     value={profile.avatar}/>
                 </div>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Planejamento</legend>
-            <div class="separator light"> </div>
+        
+            <h2 class="mt-12 text-3xl font-medium text-gray-600 border-b pb-4 mb-4">Planejamento</h2>
             <div class="input-group">
                 <div class="input-wrapper">
                     <label for="monthly-budget">Quanto eu <br/>quero ganhar por mês?</label>
@@ -66,7 +64,6 @@
                     value={profile.vacationWeeks}/>
                 </div>
             </div>
-        </fieldset>
     </form>
 </main>    
 </div>

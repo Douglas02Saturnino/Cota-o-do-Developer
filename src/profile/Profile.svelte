@@ -3,5 +3,7 @@
     import Header from '../parts/Header.svelte';
 </script>
 
-<Header title="Perfil"/>
-<Main/>
+<div class="bg-gray-100 min-h-screen">
+    <Header title="perfil"/>
+    <Main/>
+</div>
