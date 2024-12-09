@@ -15,8 +15,8 @@ const createApp = (initialData) => {
 
 export const app = createApp({
   user: {
-    name: "Douglas Saturnino",
-    avatar: "https://github.com/Douglas02Saturnino.png"
+    name: "Mayk Brito",
+    avatar: "https://github.com/maykbrito.png"
   },
   planning: {
     monthlyIncome: 50000,
